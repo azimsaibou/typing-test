@@ -1,0 +1,109 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+input{
+	width: 0;
+	opacity: 0;
+}
+body{
+	background-color: blue;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conteneur{
+	width: 700px;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 0 3px 3px;
+	padding: 10px;
+}
+/*----------------------------------*/
+.texte-annexe{
+	border-radius: 10px;
+	border: 2px solid blue;
+	padding: 10px;
+}
+/*-------------------------------------*/
+.texte{
+	padding: 10px 0;
+	max-height: 400px;
+	text-align: justify;
+}
+/*--------------------------------*/
+.texte p{
+	word-break: break-all;
+	color: white;
+}
+/*----------------------------------*/
+.texte p span{
+	opacity: 0.5;
+}
+.texte p span.active{
+	color: green;
+	opacity: 1;
+	background-color: white;
+}
+.texte p span.valide{
+	color: white;
+	opacity: 1;
+}
+.texte p span.errone{
+	color: red;
+	opacity: 1;
+}
+
+/*-------------------------------------*/
+.annexe{
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.ligne{
+	width: 100%;
+	border-top: 5px solid blue;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+/*-------------------------------*/
+.ligne ul{
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	width: 70%;
+}
+.ligne button{
+	background-color: black;
+	color: blue;
+	border-radius: 5px;
+	border: 2px solid blue;
+	height: 30px;
+	margin-right: 10px;
+	width: 100px;
+	transition: all .2s linear;
+}
+.ligne button:hover{
+	background-color: blue;
+	color: white;
+	border-color: black;
+}
+/*----------------------------*/
+.ligne ul li {
+	list-style: none;
+}
+.annexe ul li:not(:first-child){
+	border-left: 2px  solid white;
+	padding-left: 10px;
+}
+/*------------------------*/
+.annexe ul li p{
+	display: inline-block;
+
+}
+/*-------------------------*/
