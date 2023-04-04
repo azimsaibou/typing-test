@@ -17,6 +17,7 @@ let goodCharacters = 0, errorCharacters = 0;
 let firstType = true;
 let idTimer;
 let boutonRecommencer = document.querySelector(".annexe button")
+let texte_annexe = document.querySelector(".texte-annexe")
 
 function randomParagraph(){
     let texte;
@@ -95,8 +96,15 @@ function reinitialisation(){
 }
 
 
+
 randomParagraph();
 input.addEventListener("input", compare)
-document.addEventListener("DOMContentLoaded", function(){input.focus()})
-p.addEventListener("click", function(){input.focus()})
+document.addEventListener("DOMContentLoaded", function(){input.focus(); console.log(input.focus())})
+p.addEventListener("click", function(){input.focus(); })
 boutonRecommencer.addEventListener("click", reinitialisation)
+input.addEventListener("focus", function(){
+    texte_annexe.style.outline = "2px dashed blue";
+})
+input.addEventListener("blur", function(){
+    texte_annexe.style.outline = "none";
+})
