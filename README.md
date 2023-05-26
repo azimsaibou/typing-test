@@ -1,2 +1,2 @@
-# typing-test
-testez votre vitesse de frappe
+# Azim Fast Typing App
+Azim Fast Typing App pour augmenter votre vitesse de frappe
